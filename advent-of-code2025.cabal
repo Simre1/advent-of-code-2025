@@ -1,0 +1,90 @@
+cabal-version:       >=1.10
+name:                advent-of-code2025
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+-- license:
+author:              Simon Reitinger
+maintainer:          simre4775@gmail.com
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+library
+  hs-source-dirs: src
+  exposed-modules: Template, Shared, Day1.Main, Day2.Main, Day3.Main, Day4.Main, Day5.Main, Day6.Main, Day7.Main, Day8.Main,
+                   Day9.Main, Day10.Main, Day11.Main, Day12.Main
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       
+    base,
+    containers,
+    unordered-containers,
+    text,
+    bytestring,
+    split,
+    attoparsec,
+    vector,
+    deepseq,
+    hashtables,
+    array,
+    primitive,
+    massiv,
+    megaparsec,
+    parser-combinators,
+    transformers,
+    regex,
+    random,
+    linear,
+    search-algorithms,
+    optics-core,
+    sbv,
+    yaml,
+    aeson,
+    bitvec,
+    MemoTrie,
+    matrix,
+    range,
+    parallel,
+    mfsolve,
+    graphviz,
+    advent,
+    grow-vector,
+    monad-loops
+
+  default-language:    GHC2024
+  default-extensions:
+    QuasiQuotes
+    ScopedTypeVariables
+    GADTs
+    TypeFamilies
+    FlexibleContexts
+    FlexibleInstances
+    OverloadedStrings
+    MultiWayIf
+    LambdaCase
+    PatternSynonyms
+    RankNTypes
+    TypeApplications
+    BangPatterns
+    ViewPatterns
+    DataKinds
+    TupleSections
+    PolyKinds
+    TupleSections
+    StandaloneDeriving
+    PartialTypeSignatures
+    OverloadedLabels
+    OverloadedRecordDot
+    NoFieldSelectors
+    DuplicateRecordFields
+  ghc-options: -O2 -threaded
+
+executable runner
+  hs-source-dirs: app
+  main-is: Main.hs
+  build-depends:       base >=4.14, advent-of-code2025
+  ghc-options: -O2 -threaded
+  default-language: GHC2024

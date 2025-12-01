@@ -1,0 +1,8 @@
+packages: *.cabal
+
+allow-newer: base, primitive
+
+source-repository-package
+    type: git
+    location: https://github.com/glguy/advent
+	subdir: common
