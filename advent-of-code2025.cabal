@@ -52,7 +52,8 @@ library
     graphviz,
     advent,
     grow-vector,
-    monad-loops
+    monad-loops,
+    bitset
 
   default-language:    GHC2024
   default-extensions:
