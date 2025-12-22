@@ -55,7 +55,8 @@ library
     monad-loops,
     bitset,
     bimap,
-    string-interpolate
+    string-interpolate,
+    async
 
   default-language:    GHC2024
   default-extensions:
